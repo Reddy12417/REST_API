@@ -4,10 +4,10 @@ node{
   }
   //stage('SonarQube Analysis'){
   //  withSonarQubeEnv('Sonar')
-      {
-   //   bat 'mvn sonar:sonar'
+  //    {
+  //   bat 'mvn sonar:sonar'
   //  }  
- //}
+  //}
   stage('Compile and Package'){
   bat 'mvn package'
   }

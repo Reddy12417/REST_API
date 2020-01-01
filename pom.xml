@@ -6,7 +6,7 @@
   <groupId>com.slk.springboot</groupId>
   <artifactId>EmployeeRESTAPI</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <packaging>war</packaging>  
   <name>Spring Boot Employee API</name>
   <description>Spring Boot - Employee REST API</description>
   
@@ -14,8 +14,7 @@
   	<groupId>org.springframework.boot</groupId>
   	<artifactId>spring-boot-starter-parent</artifactId>
   	<version>1.5.1.RELEASE</version>
-  </parent>
-  
+  </parent>  
   <dependencies>
   	<dependency>
   		<groupId>org.springframework.boot</groupId>
@@ -33,7 +32,11 @@
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
-	
+	</dependency>
+	 <dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-tomcat</artifactId>
+		<scope>provided</scope>
 	</dependency>
   </dependencies>
   
@@ -43,5 +46,4 @@
 	<java.version>1.8</java.version>
   </properties>
   
-  <packaging>war</packaging>
-</project>
+  /project>

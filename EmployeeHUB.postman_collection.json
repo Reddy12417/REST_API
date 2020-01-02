@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "0b9cb4db-9d62-4848-97d5-c10b1661e8d7",
+		"name": "EmployeeHUB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "addEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":\"1\",\n\"name\":\"Dink\",\n\"technology\":\"Python\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/EmployeeRESTAPI-0.0.1-SNAPSHOT/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"EmployeeRESTAPI-0.0.1-SNAPSHOT",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/EmployeeRESTAPI-0.0.1-SNAPSHOT/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"EmployeeRESTAPI-0.0.1-SNAPSHOT",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeByEmpNo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/EmployeeRESTAPI-0.0.1-SNAPSHOT/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"EmployeeRESTAPI-0.0.1-SNAPSHOT",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\":\"1\",\n\"name\":\"John\",\n\"technology\":\".NET\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/EmployeeRESTAPI-0.0.1-SNAPSHOT/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"EmployeeRESTAPI-0.0.1-SNAPSHOT",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/EmployeeRESTAPI-0.0.1-SNAPSHOT/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"EmployeeRESTAPI-0.0.1-SNAPSHOT",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
